@@ -16,6 +16,14 @@ Class ThailandSurprise {
     public function detachBalls(){
        $this->balls = false; 
     }
+    
+    public function getPhoto(){
+        if($this->balls) {
+            return 'images/trap.gif';
+        } else {
+            return 'images/skirt.jpg';
+        }
+    }
 
 }
 
