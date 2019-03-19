@@ -1,9 +1,12 @@
 <?php
-Class ThailandSurprise{
+
+Class ThailandSurprise {
+
     public $clothes;
+
 }
 
 $surprise = new ThailandSurprise();
 
-$surprise->clothes;
+$surprise->clothes('miniskirt');
 ?>
