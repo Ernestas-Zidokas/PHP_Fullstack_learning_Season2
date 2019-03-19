@@ -8,5 +8,5 @@ Class ThailandSurprise {
 
 $surprise = new ThailandSurprise();
 
-$surprise->clothes('miniskirt');
+$surprise->clothes = 'miniskirt';
 ?>
