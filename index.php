@@ -4,9 +4,11 @@ Class ThailandSurprise {
 
     public $clothes;
     private $balls;
+    private $name;
 
-    public function __construct() {
+    public function __construct($name) {
         $this->balls = rand(0, 1);
+        $this->name = $name;
     }
     
     public function attachBalls(){
@@ -27,10 +29,9 @@ Class ThailandSurprise {
 
 }
 
-$surprise = new ThailandSurprise();
+$surprise = new ThailandSurprise('Ballzzeryte');
 
 $surprise->clothes = 'miniskirt';
-$surprise->getPhoto();
 ?>
 <html>
     <head>
