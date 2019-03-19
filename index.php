@@ -29,5 +29,14 @@ Class ThailandSurprise {
 
 $surprise = new ThailandSurprise();
 
-print $surprise->clothes = 'miniskirt';
+$surprise->clothes = 'miniskirt';
+$surprise->getPhoto();
 ?>
+<html>
+    <head>
+        <title>OOP</title>
+    </head>
+    <body>
+        <img src="<?php print $surprise->getPhoto(); ?>">
+    </body>
+</html>
