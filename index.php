@@ -16,6 +16,12 @@ Class Jacuzzi {
 
 }
 
+Class User {
+    public function peeInJacuzzi(Jacuzzi $jacuzzi, $amount){
+        $jacuzzi->amount_non_water = $amount;
+    }
+}
+
 $pliuskupliusku = new Jacuzzi(1000, 200);
 print 'water purity: ' . $pliuskupliusku->getWaterPurity();
 ?>
