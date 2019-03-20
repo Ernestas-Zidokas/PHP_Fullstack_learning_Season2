@@ -17,19 +17,28 @@ Class Jacuzzi {
 }
 
 Class User {
-    public function peeInJacuzzi(Jacuzzi $jacuzzi, $amount){
+
+    public function peeInJacuzzi(Jacuzzi $jacuzzi, $amount) {
         $jacuzzi->amount_non_water += $amount;
     }
+
 }
 
-$pliuskupliusku = new Jacuzzi(1000, 200);
-print 'water purity: ' . $pliuskupliusku->getWaterPurity();
+$pliuskupliusku = new Jacuzzi(600);
+$petras = new User();
+$piotra = new User();
+$petras->peeInJacuzzi($pliuskupliusku, rand(0, 200) / 1000);
+$piotra->peeInJacuzzi($pliuskupliusku, rand(0, 100) / 1000);
+
+$pliuskupliusku->getWaterPurity();
 ?>
 <html>
     <head>
         <title>OOP</title>
     </head>
     <body>
-
+        <?php print 'Skaidrus vanduo: ' . $pliuskupliusku->amount_water; ?>
+        <?php print 'Neskaidrus vanduo: ' . $pliuskupliusku->amount_non_water; ?>
+        <?php print 'Vandens skaidrumas: ' . $pliuskupliusku->getWaterPurity(); ?>
     </body>
 </html>
