@@ -36,6 +36,9 @@ Class Gerimas {
     public function getAbarot() {
         return $this->data['abarot'];
     }
+    public function getData(){
+        return $this->data;
+    }
 
 }
 ?>
