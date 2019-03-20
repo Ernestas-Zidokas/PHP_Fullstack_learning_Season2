@@ -18,7 +18,7 @@ Class Jacuzzi {
 
 Class User {
     public function peeInJacuzzi(Jacuzzi $jacuzzi, $amount){
-        $jacuzzi->amount_non_water = $amount;
+        $jacuzzi->amount_non_water += $amount;
     }
 }
 
