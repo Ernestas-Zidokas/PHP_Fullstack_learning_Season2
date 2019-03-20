@@ -36,7 +36,16 @@ Class Gerimas {
     public function getAbarot() {
         return $this->data['abarot'];
     }
-    public function getData(){
+    
+    public function setData(array $data){
+        $data = [
+            'name' => $this->setName(),
+            'amount' => $this->setAmount(),
+            'abarot' => $this->setAbarot()
+        ];
+    }
+
+    public function getData() {
         return $this->data;
     }
 
